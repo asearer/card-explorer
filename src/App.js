@@ -1,9 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar'; // Import the Navbar component
 import './App.css'; // Import your CSS file
 import Card from './Card'; // Import the Card component
+import AboutComponent from './AboutComponent';
+import ContactComponent from './ContactComponent'; // Import the ContactComponent
+
+import Navbar from './Navbar'; // Import the Navbar component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router, Routes, and Route
-import Contact from './Contact'; // Import the Contact component
 
 class CardExplorer extends React.Component {
   constructor(props) {
@@ -38,7 +40,11 @@ class CardExplorer extends React.Component {
     return (
       
         <div>
-          <Navbar />
+          <Navbar /> {/* Render the Navbar component */}
+          <Routes>
+          <Route path="/about" element={<AboutComponent />} /> {/* Render AboutComponent when /about is matched */}
+          <Route path="/contact" element={<ContactComponent />} /> {/* Add route for ContactComponent */}
+          </Routes>
           <div className="container">
             <h1 className="animated">
               Chronicles of Ethiria
@@ -46,18 +52,14 @@ class CardExplorer extends React.Component {
             <div className="globe">
               <img src="/globe.gif" alt="" />
             </div>
-            <div className="card-container">
-              {this.state.cardContainer}
-            </div>
             <button id="draw-card" onClick={this.drawRandomCards}>
               Explore Cards
             </button>
+            <div className="card-container">
+              {this.state.cardContainer}
+            </div>
             <footer>&copy; 2023-2024 asearer</footer>
           </div>
-          {/* Define route for the Contact component */}
-          <Routes>
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
         </div>
       
     );
