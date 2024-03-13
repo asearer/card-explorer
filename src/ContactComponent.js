@@ -7,10 +7,10 @@ const ContactComponent = () => {
   return (
     <div className="page-container">
       <div className="content">
-        <h1>Contact Page</h1>
+        
         <div className="contact-info">
           <h2>Contact Information</h2>
-          <p>Email: amsearer84@gmail.com</p>
+          <p>Email:</p> <p>amsearer84@gmail.com</p>
           
         </div>
         
