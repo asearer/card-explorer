@@ -12,7 +12,7 @@ const ContactComponent = () => {
           <p>Phone: +1234567890</p>
         </div>
         <div className="social-links">
-          <h2>Follow Us</h2>
+          <h2>Follow On Social:</h2>
           <ul>
             <li><a href="https://www.facebook.com">Facebook</a></li>
             <li><a href="https://www.twitter.com">Twitter</a></li>

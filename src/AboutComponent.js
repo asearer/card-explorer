@@ -7,7 +7,7 @@ const AboutComponent = () => {
       <div className="content">
         <h1>About Page</h1>
         <p>Welcome to our app's About page!</p>
-        <p>The Ethiria Card Explorer is designed to inspire interest and feedback regarding the upcoming game Chronicles of Ethiria.</p>
+        <p>The Ethiria Card Explorer is designed to be a companion app that inspires interest and feedback regarding the upcoming game Chronicles of Ethiria.</p>
         
       </div>
     </div>

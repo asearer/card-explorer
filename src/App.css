@@ -168,6 +168,8 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Semi-transparent overlay */
