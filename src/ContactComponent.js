@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css'; // Import the main CSS file for styling
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const ContactComponent = () => {
   return (
@@ -14,9 +16,24 @@ const ContactComponent = () => {
         <div className="social-links">
           <h2>Follow On Social:</h2>
           <ul>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-            <li><a href="https://www.twitter.com">Twitter</a></li>
-            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li>
+              <a href="https://www.facebook.com">
+                <FontAwesomeIcon icon={faFacebook} />
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com">
+                <FontAwesomeIcon icon={faTwitter} />
+                <span>Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com">
+                <FontAwesomeIcon icon={faInstagram} />
+                <span>Instagram</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
