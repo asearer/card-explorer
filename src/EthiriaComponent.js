@@ -5,7 +5,7 @@ const EthiriaComponent = () => {
   return (
     <div className="page-container">
       <div className="content">
-        <h1>Ethiria Page</h1>
+        <h1>Ethiria </h1>
         <h2>Background</h2>
         <p>Ethiria is a mythical realm filled with magic and wonder. It is home to various races, including elves, dwarves, and humans, who coexist in a fragile balance.</p>
         <h2>Characters</h2>
