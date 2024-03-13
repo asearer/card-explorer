@@ -6,10 +6,13 @@ const AboutComponent = () => {
     <div className="page-container">
       <div className="content">
         <h1>About Page</h1>
-        {/* About page content */}
+        <p>Welcome to our app's About page!</p>
+        <p>The Ethiria Card Explorer is designed to inspire interest and feedback regarding the upcoming game Chronicles of Ethiria.</p>
+        
       </div>
     </div>
   );
 };
 
 export default AboutComponent;
+

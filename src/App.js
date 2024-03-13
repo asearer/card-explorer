@@ -3,9 +3,9 @@ import './App.css'; // Import your CSS file
 import Card from './Card'; // Import the Card component
 import AboutComponent from './AboutComponent';
 import ContactComponent from './ContactComponent'; // Import the ContactComponent
-
 import Navbar from './Navbar'; // Import the Navbar component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router, Routes, and Route
+import EthiriaComponent from './EthiriaComponent';
 
 class CardExplorer extends React.Component {
   constructor(props) {
@@ -44,6 +44,7 @@ class CardExplorer extends React.Component {
           <Routes>
           <Route path="/about" element={<AboutComponent />} /> {/* Render AboutComponent when /about is matched */}
           <Route path="/contact" element={<ContactComponent />} /> {/* Add route for ContactComponent */}
+          <Route path="/ethiria" element={<EthiriaComponent />} /> {/* Route for EthiriaComponent */}
           </Routes>
           <div className="container">
             <h1 className="animated">
